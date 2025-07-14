@@ -1,0 +1,143 @@
+.modal-content{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-Color: rgb(0,0,0,0.6);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+    z-index: 50;
+}
+
+.modal-content.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content .modal{
+    width:28%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-Color: #fff;
+    padding: 2vw;
+    border-radius: 1.5vw;
+    gap: 1.5vw;
+    transform: translateY(-10%);
+    opacity: 0.5;
+    visibility: hidden;
+    transition: all 0.3s 0.4s ease-in-out;
+}
+
+.modal-content .modal.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+}
+
+.modal-content .modal .modal-head{
+    width: 100;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-content .modal .modal-head .titre{
+    font-size:1.2vw;
+    color: #121212;
+}
+
+.modal-content .modal .modal-head .btnClose{
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-Color: transparent;
+    color: red;
+    border-radius: 0.3vw;
+}
+
+.modal-content .modal .modal-head .btnClose:hover{
+    background-Color: #f9f9f9;
+}
+
+.modal-content .modal .modal-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+
+}
+
+.modal-content .modal .modal-body .form-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap:0.4vw;
+}
+
+.modal-content .modal .modal-body .form-group label{
+    font-size: 1vw;
+}
+
+.modal-content .modal .modal-body .form-group .content-input{
+    width: 100%;
+    height: 3.3vw;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid rgb(0,0,0,0.1);
+    border-radius: 0.3vw;
+    overflow: hidden;
+}
+
+.modal-content .modal .modal-body .form-group .content-input .icone{
+    width: 12%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+}
+
+.modal-content .modal .modal-body .form-group .content-input input{
+    width: 88%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: #303030;
+    background-Color: transparent;
+}
+
+.modal-content .modal .modal-foot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content .modal .modal-foot .btnAdd{
+    width: 100%;
+    height: auto;
+    padding: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-Color: #8E44AD;
+    color: #fff;
+    font-size: 1vw;
+    font-family: bold;
+    border: none;
+    border-radius: 0.5vw;
+
+}

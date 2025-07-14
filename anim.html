@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .origin{
+            width: 10vw;
+            height: 10vw;
+            background-color: red;
+            margin: 10vw auto;
+            transition: all 2s;
+        } */
+        .parent{
+            width: 20vw;
+            height: 20vw;
+            /* background-color: red;
+             */
+            border: 1px solid red;
+            margin: 10vw auto;
+            perspective: 1000px;
+        }
+        .parent .card{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: all 2s;
+            transform-style: preserve-3d;
+        }
+        .parent .card:hover{
+            transform: rotateY(180deg);
+        }
+        .parent .card .front, .parent .card .back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            backface-visibility: hidden;
+        }
+        
+        .parent .card .front{
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+        .parent .card .back{
+            background-color: rgb(158, 2, 33);
+            backface-visibility: hidden;
+        }
+        /* .origin:hover{
+            transform: rotate(360deg);
+        } */
+
+        /* .b2{ */
+            /* transform-origin: top center; */
+            /* transform-origin: 50% 80%; */
+        /* } */
+    </style>
+</head>
+<body>
+    <!-- TRANSFORM-ORIGIN -->
+    <div class="origin"></div>
+    <div class="origin b2"></div>
+
+    <!-- PERSPECTIVE - backface-visibility - preserve-3d -->
+    <div class="parent">
+        <div class="card">
+            <div class="front"><p>FRONT</p></div>
+            <div class="back"><p>BACK</p></div>
+        </div>
+    </div>
+
+</body>
+</html>

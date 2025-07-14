@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../assets/css/admin/product/product.css">
+    <link rel="stylesheet" href="../../../assets/css/admin/product/addProduct.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-content">
+        <form action="" class="modal">
+            <div class="modal-head">
+                <h4 class="titre">Ajouter client</h4>
+                <button class="btnClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-x-icon lucide-circle-x"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="titre">Nom complet</label>
+                    <div class="content-input">
+                        <span class="icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </span>
+                        <input type="text" placeholder="Entrez votre nom complet"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="titre">Contact</label>
+                    <div class="content-input">
+                        <span class="icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                        </span>
+                        <input type="text" placeholder="Entrez votre contact"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="titre">Adresse</label>
+                    <div class="content-input">
+                        <span class="icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-house-icon lucide-map-pin-house"><path d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z"/><path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2"/><path d="M18 22v-3"/><circle cx="10" cy="10" r="3"/></svg>
+                        </span>
+                        <input type="text" placeholder="Entrez votre adresse"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-foot">
+                <button class="btnAdd">
+                    Ajouter
+                </button>
+            </div>
+        </form>
+    </div>
+    <main id="main-content">
+        <div class="content-nav">
+            <div class="content-logo">
+                <div id="image">
+                    <img src="" alt="">
+                </div>
+                <h1>ShopMada</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">profil</a></li>
+                    <li><a href="">client</a></li>
+                    <li><a href="">Produit</a></li>
+                    <li><a href="">Commande</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main id="content-page">
+            <header>
+                <div class="content-left">
+                    <button id="btnMenu"></button>
+                    <h3 id="namePage">Dashboard</h3>
+                </div>
+                <div class="content-right">
+                    <div class="content-notif">
+    
+                    </div>
+                    <div class="content-profil">
+                        <div class="content-perso">
+                            <div id="photo">
+                                <img src="" alt="">
+                            </div>
+                            <div class="content-nom">
+                                <p id="nom">RAkotot</p>
+                                <small id="role">Admin</small>
+                            </div>
+                        </div>
+                        <div class="drop">
+                            <button id="btnDrop">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                            <div class="content-drop">
+                                <button id="btnDrop">
+                                    <span class="icone">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    </span>
+                                    <span class="text">Profil</span>
+                                </button>
+                                <button id="btnDrop">
+                                    <span class="icone">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                                    </span>
+                                    <span class="text">Paramètre</span>
+                                </button>
+                                <button id="btnDrop">
+                                    <span class="icone">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out"><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/></svg>
+                                    </span>
+                                    <span class="text">Deconnexion</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="content-product">
+                <div class="content-head">
+                    <h2 id="titres">Product</h2>
+                    <button id="btnAdd">Ajouter produit</button>
+                </div>
+                <div class="content-list">
+                    <table>
+                        <tr>
+                            <th>Nom produit</th>
+                            <th>Prix</th>
+                            <th>Quantite</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Akanjo</td>
+                            <td>15000</td>
+                            <td>250</td>
+                            <td class="column-action">
+                                <div id="btn-action">
+                                    <button class="btn">Supprimer</button>
+                                    <button class="btn">Modifier</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Akanjo</td>
+                            <td>15000</td>
+                            <td>250</td>
+                            <td class="column-action">
+                                <div id="btn-action">
+                                    <button class="btn">Supprimer</button>
+                                    <button class="btn">Modifier</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Akanjo</td>
+                            <td>15000</td>
+                            <td>250</td>
+                            <td class="column-action">
+                                <div id="btn-action">
+                                    <button class="btn delete">Supprimer</button>
+                                    <button class="btn edit">Modifier</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <script src="product.js"></script>
+</body>
+</html>

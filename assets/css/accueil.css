@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    height: 5vw;
+    padding: 0.5vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .logo #titre{
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: crimson;
+}
+
+
+#header nav{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 1vw;
+}
+
+#header nav a{
+    text-decoration: none;
+    color: #303030df;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#header nav a:hover{
+    color: brown;
+}
+
+#header button{
+    padding:0.8vw 1vw;
+    background-color: brown;
+    border: none;
+    border-radius: 0.5vw;
+    color: #fff;
+    cursor: pointer;
+}
+
+#main .section1{
+    width: 100%;
+    height: 40vw;
+    padding: 2vw;
+    background-color: #f1f0fb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+    /* background-color: aqua; */
+}
+
+#main .section1 .content-titre{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#main .section1 .content-titre .infos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#main .section1 .content-titre .infos h2{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #303030;
+}
+#main .section1 .content-titre .infos h2 span{
+    color: #9b87f5;
+}
+
+#main .section1 .content-titre .infos p{
+    color: #303030;
+    opacity: 0.7;
+    line-height: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main .section1 .content-titre .btn-cta{
+    width: 20vw;
+    height: auto;
+    background-color: #f97316; 
+    border: none;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    color: #fff;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#main .section1 .image{
+    width: 50%;
+    height: 30vw;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+#main .section1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main .section2{
+    width: 100%;
+    height: 50vw;
+    padding: 4vw;
+    background-color: #fff;
+}
+
+#main .section2 h2{
+    text-align: center;
+}
+
+#main .section3{
+    width: 100%;
+    height: 50vw;
+    padding: 4vw;
+    background-color: azure;
+}
+
+#footer{
+    width: 100%;
+    height: 40vw;
+    padding: 4vw;
+    background-color: blue;
+}
